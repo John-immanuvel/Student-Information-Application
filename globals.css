@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  background: url("/tn-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  background: linear-gradient(to right, #0b3c5d, #145da0);
+  color: white;
+  padding: 16px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  max-width: 950px;
+  background: #ffffff;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- FORM GRID ---------- */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+/* ---------- INPUTS ---------- */
+input,
+select {
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid #90a4ae;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #145da0;
+  box-shadow: 0 0 0 2px rgba(20, 93, 160, 0.15);
+}
+
+/* ---------- MARKS TABLE ---------- */
+/* ---------- GOVERNMENT STYLE MARKS TABLE ---------- */
+/* ---------- GOVERNMENT STYLE MARKS TABLE ---------- */
+.marks-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Table Header */
+.marks-table th {
+  background-color: #dbeafe; /* soft light blue */
+  color: #000;
+  padding: 8px;
+  border: 1px solid #000;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Table Cells */
+.marks-table td {
+  padding: 8px;
+  border: 1px solid #000;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Alternate Row Colors */
+.marks-table tr:nth-child(even) td {
+  background-color: #f9f9f9; /* very light gray */
+}
+
+/* Input inside table */
+.marks-table input {
+  width: 60px;
+  padding: 4px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 2px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* ---------- BUTTON ---------- */
+button {
+  background: linear-gradient(to right, #0b3c5d, #145da0);
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: linear-gradient(to right, #145da0, #0b3c5d);
+}
+
+/* ---------- ERROR TEXT ---------- */
+.error {
+  color: #d32f2f;
+  font-size: 12px;
+  margin-top: 3px;
+}
+/* ---------- FORM GRID ---------- */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* more space between fields */
+}
+
+/* Full width fields */
+.full {
+  grid-column: 1 / -1;
+}
+
+/* ---------- INPUTS & SELECT ---------- */
+input,
+select {
+  width: 100%;
+  padding: 12px 14px; /* taller inputs for better spacing */
+  border: 1px solid #90a4ae;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Focus effect */
+input:focus,
+select:focus {
+  border-color: #145da0;
+  box-shadow: 0 0 0 2px rgba(20, 93, 160, 0.15);
+}
+
+/* Space below inputs for error text */
+.form-grid div {
+  display: flex;
+  flex-direction: column;
+}
